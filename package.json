@@ -17,7 +17,8 @@
   "homepage": "https://github.com/AnniePawl/GiphySearch#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "giphy-api": "^1.2.7"
   },
   "devDependencies": {},
   "description": ""
