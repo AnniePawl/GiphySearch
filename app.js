@@ -24,7 +24,12 @@ app.get('/hello-gif', function (req, res) {
 
 
 app.get('/', function (req, res) {
-  giphy.search(req.query.term, function (err, response) {
+    console.log(req, res)
+    var queryString = req.query.term
+    if(req.query.term == undefined) {
+        queryString = 'puppy';
+    }
+  giphy.search(queryString, function (err, response) {
     res.render('home', {gifs: response.data})
   });
 });
