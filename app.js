@@ -4,7 +4,8 @@ var express = require('express');
 var app = express();
 var http = require('http');
 var giphy = require('giphy-api')();
-
+const env = require('dotenv').config();
+const port = process.env.PORT || 3000;
 var exphbs  = require('express-handlebars');
 
 app.use(express.static('public'));
@@ -34,6 +35,6 @@ app.get('/', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log('Gif Search listening on port 3000!');
 });
