@@ -1,6 +1,7 @@
 # GiphySearch
 
 Backend Web 1.1 Giphy Search Project 
+[Check it out!](https://anna-giphy-search.herokuapp.com/)
 
 ## Purpose 
 The purpose of this project was to familiarize myself with Node.js through building a simple gif search engine using the Giphy API 
